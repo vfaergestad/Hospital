@@ -17,40 +17,34 @@ public abstract class Person {
      * @param socialSecurityNumber Social security number of the person. Cannot be null or blank.
      * @throws IllegalArgumentException Throws when parameter requirements are not met.
      */
-    public Person(String firstName, String lastName, String socialSecurityNumber) throws IllegalArgumentException{
-        if (firstName == null || firstName.isBlank()){
-            throw new IllegalArgumentException("Firstname cannot be empty.");
-        } else {
-            this.firstName = firstName;
-        }
-
-        if (lastName == null || lastName.isBlank()){
-            throw new IllegalArgumentException("Lastname cannot be empty.");
-        } else {
-            this.firstName = lastName;
-        }
-
-        if (socialSecurityNumber == null || socialSecurityNumber.isBlank()){
-            throw new IllegalArgumentException("Social security number cannot be empty.");
-        } else {
-            this.firstName = socialSecurityNumber;
-        }
+    public Person(String firstName, String lastName, String socialSecurityNumber){
+        setFirstName(firstName);
+        setLastName(lastName);
+        setSocialSecurityNumber(socialSecurityNumber);
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstName(String firstName) throws IllegalArgumentException{
+        if (firstName == null || firstName.isBlank()){
+            throw new IllegalArgumentException("Firstname cannot be empty.");
+        } else {
+            this.firstName = firstName;
+        }
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastName(String lastName) throws IllegalArgumentException{
+        if (lastName == null || lastName.isBlank()){
+            throw new IllegalArgumentException("Lastname cannot be empty.");
+        } else {
+            this.firstName = lastName;
+        }
     }
 
     /**
@@ -64,8 +58,12 @@ public abstract class Person {
         return socialSecurityNumber;
     }
 
-    public void setSocialSecurityNumber(String socialSecurityNumber) {
-        this.socialSecurityNumber = socialSecurityNumber;
+    public void setSocialSecurityNumber(String socialSecurityNumber) throws IllegalArgumentException{
+        if (socialSecurityNumber == null || socialSecurityNumber.isBlank()){
+            throw new IllegalArgumentException("Social security number cannot be empty.");
+        } else {
+            this.firstName = socialSecurityNumber;
+        }
     }
 
     @Override
