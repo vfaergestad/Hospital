@@ -94,4 +94,27 @@ public class Department {
                 '}';
     }
 
+    /**
+     * Removes person from the department.
+     * @param person Patient or employee to be removed.
+     * @throws RemoveException Thrown if the person is not in the register, or not a patient or an employee.
+     */
+    public void remove(Person person) throws RemoveException {
+        if (person instanceof Employee) {
+            try {
+                employees.remove(person.getFullName());
+            } catch (Exception e){
+                throw new RemoveException(person.getFullName() + " is not in the department.");
+            }
+        } else if (person instanceof Patient) {
+            try {
+                patients.remove(person.getFullName());
+            } catch (Exception e) {
+                throw new RemoveException(person.getFullName() + " is not in the department.");
+            }
+        } else {
+            throw new RemoveException(person.getFullName() + " is not a patient or an employee.");
+        }
+    }
+
 }
