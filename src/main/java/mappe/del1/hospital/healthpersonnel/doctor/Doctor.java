@@ -1,4 +1,7 @@
-package Personnel;
+package mappe.del1.hospital.healthpersonnel.doctor;
+
+import mappe.del1.hospital.Employee;
+import mappe.del1.hospital.Patient;
 
 /**
  * Represents one Doctor at the hospital.

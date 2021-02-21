@@ -1,4 +1,7 @@
+package mappe.del1.hospital;
+
 import Personnel.*;
+import mappe.del1.hospital.exception.RemoveException;
 
 import java.util.HashMap;
 import java.util.Objects;
@@ -14,7 +17,7 @@ public class Department {
     private HashMap<String, Patient> patients;
 
     /**
-     * Constructor for class Department.
+     * Constructor for class mappe.del1.hospital.Department.
      * @param departmentName Name of the department.
      */
     public Department(String departmentName){
@@ -30,7 +33,7 @@ public class Department {
      */
     public void setDepartmentName(String departmentName) throws IllegalArgumentException{
         if (departmentName == null || departmentName.isBlank()){
-            throw new IllegalArgumentException("Department name cannot be empty.");
+            throw new IllegalArgumentException("mappe.del1.hospital.Department name cannot be empty.");
         } else {
             this.departmentName = departmentName;
         }
@@ -89,7 +92,7 @@ public class Department {
 
     @Override
     public String toString() {
-        return "Department{" +
+        return "mappe.del1.hospital.Department{" +
                 "departmentName='" + departmentName + '\'' +
                 '}';
     }

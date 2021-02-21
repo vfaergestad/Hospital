@@ -1,4 +1,4 @@
-package Personnel;
+package mappe.del1.hospital;
 
 /**
  * Interface with methods for diagnosable persons.

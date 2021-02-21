@@ -1,10 +1,10 @@
-package Personnel;
+package mappe.del1.hospital;
 
 /**
  * Represents one patient at the hospital.
  * @author Vegard Færgestad
  */
-public class Patient extends Person implements Diagnosable{
+public class Patient extends Person implements Diagnosable {
     private String diagnosis;
 
     /**

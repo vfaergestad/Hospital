@@ -1,4 +1,6 @@
-package Personnel;
+package mappe.del1.hospital.healthpersonnel.doctor;
+
+import mappe.del1.hospital.Patient;
 
 /**
  * Represents one general practitioner at the hospital.

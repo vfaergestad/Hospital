@@ -1,10 +1,12 @@
-package Personnel;
+package mappe.del1.hospital.healthpersonnel;
+
+import mappe.del1.hospital.Employee;
 
 /**
  * Represents one nurse at the hospital.
  * @author Vegard Færgestad
  */
-public class Nurse extends Employee{
+public class Nurse extends Employee {
 
     /**
      * Constructor for class Nurse.

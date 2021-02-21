@@ -1,3 +1,5 @@
+package mappe.del1.hospital;
+
 import java.util.HashMap;
 
 /**
@@ -10,13 +12,13 @@ public class Hospital {
     private HashMap<String, Department> departments;
 
     /**
-     * Constructor for class Hospital.
+     * Constructor for class mappe.del1.hospital.Hospital.
      * @param hospitalName Name of the hospital.
      * @throws IllegalArgumentException Thrown if hospital name is null or blank.
      */
     public Hospital(String hospitalName) throws IllegalArgumentException{
         if (hospitalName == null || hospitalName.isBlank()){
-            throw new IllegalArgumentException("Hospital name cannot be empty.");
+            throw new IllegalArgumentException("mappe.del1.hospital.Hospital name cannot be empty.");
         } else {
             this.hospitalName = hospitalName;
         }
@@ -38,7 +40,7 @@ public class Hospital {
      */
     public void addDepartment(Department department) throws IllegalArgumentException{
         if (department == null) {
-            throw new IllegalArgumentException("Department cannot be null.");
+            throw new IllegalArgumentException("mappe.del1.hospital.Department cannot be null.");
         } else {
             departments.put(department.getDepartmentName(), department);
         }
@@ -46,7 +48,7 @@ public class Hospital {
 
     @Override
     public String toString() {
-        return "Hospital{" +
+        return "mappe.del1.hospital.Hospital{" +
                 "hospitalName='" + hospitalName + '\'' +
                 '}';
     }
