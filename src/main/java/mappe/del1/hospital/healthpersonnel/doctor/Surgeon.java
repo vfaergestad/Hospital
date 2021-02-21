@@ -2,6 +2,8 @@ package mappe.del1.hospital.healthpersonnel.doctor;
 
 import mappe.del1.hospital.Patient;
 
+import java.util.Objects;
+
 /**
  * Represents one surgeon at the hospital.
  * @author Vegard Færgestad
@@ -20,11 +22,12 @@ public class Surgeon extends Doctor{
 
     /**
      * Sets the patients diagnose to the given diagnose.
-     * @param patient Patient to be diagnosed.
+     * @param patient Patient to be diagnosed. Cannot be null.
      * @param diagnosis Diagnose to be set.
      */
     @Override
     public void setDiagnosis(Patient patient, String diagnosis) {
+        Objects.requireNonNull(patient, "Patient parameter cannot be null.");
         patient.setDiagnosis(diagnosis);
     }
 }
