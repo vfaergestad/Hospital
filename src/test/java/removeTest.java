@@ -1,7 +1,9 @@
-import Personnel.GeneralPractitioner;
-import Personnel.Nurse;
-import Personnel.Patient;
-import Personnel.Surgeon;
+import mappe.del1.hospital.Department;
+import mappe.del1.hospital.exception.RemoveException;
+import mappe.del1.hospital.healthpersonnel.doctor.GeneralPractitioner;
+import mappe.del1.hospital.healthpersonnel.Nurse;
+import mappe.del1.hospital.Patient;
+import mappe.del1.hospital.healthpersonnel.doctor.Surgeon;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
