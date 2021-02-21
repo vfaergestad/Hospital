@@ -29,7 +29,11 @@ public class Patient extends Person implements Diagnosable {
      * @param diagnosis Diagnose to be set.
      */
     public void setDiagnosis(String diagnosis){
-        this.diagnosis = diagnosis;
+        if (diagnosis.isBlank()){
+            this.diagnosis = null;
+        } else {
+            this.diagnosis = diagnosis;
+        }
     }
 
 }
