@@ -4,6 +4,10 @@ import mappe.del1.hospital.Hospital;
 import mappe.del1.hospital.Patient;
 import mappe.del1.hospital.exception.RemoveException;
 
+/**
+ * Class for testing some of the hospitals functionality.
+ * @author Vegard Færgestad
+ */
 public class HospitalClient {
     public static void main(String[] args) {
         Hospital hospital = new Hospital("Sykehuset");

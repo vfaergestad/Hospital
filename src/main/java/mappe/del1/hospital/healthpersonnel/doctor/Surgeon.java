@@ -18,6 +18,11 @@ public class Surgeon extends Doctor{
         super(firstName, lastName, socialSecurityNumber);
     }
 
+    /**
+     * Sets the patients diagnose to the given diagnose.
+     * @param patient Patient to be diagnosed.
+     * @param diagnosis Diagnose to be set.
+     */
     @Override
     public void setDiagnosis(Patient patient, String diagnosis) {
         patient.setDiagnosis(diagnosis);

@@ -17,10 +17,17 @@ public class Patient extends Person implements Diagnosable {
         super(firstName, lastName, socialSecurityNumber);
     }
 
+    /**
+     * @return Diagnosis of patient.
+     */
     public String getDiagnosis(){
         return this.diagnosis;
     }
 
+    /**
+     * Sets the patients diagnose to the given diagnose.
+     * @param diagnosis Diagnose to be set.
+     */
     public void setDiagnosis(String diagnosis){
         this.diagnosis = diagnosis;
     }

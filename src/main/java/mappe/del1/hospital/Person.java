@@ -1,7 +1,5 @@
 package mappe.del1.hospital;
 
-import java.util.Objects;
-
 /**
  * Represents one person at the hospital.
  * Includes persons name and social security number.
@@ -25,10 +23,18 @@ public abstract class Person {
         setSocialSecurityNumber(socialSecurityNumber);
     }
 
+    /**
+     * @return Persons first name.
+     */
     public String getFirstName() {
         return firstName;
     }
 
+    /**
+     * Sets persons first name to the given string.
+     * @param firstName First name to be set. String type.
+     * @throws IllegalArgumentException Thrown if parameter is null or blank.
+     */
     public void setFirstName(String firstName) throws IllegalArgumentException{
         if (firstName == null || firstName.isBlank()){
             throw new IllegalArgumentException("Firstname cannot be empty.");
@@ -37,10 +43,18 @@ public abstract class Person {
         }
     }
 
+    /**
+     * @return Persons last name.
+     */
     public String getLastName() {
         return lastName;
     }
 
+    /**
+     * Sets persons last name to the given string.
+     * @param lastName Last name to be set. String type.
+     * @throws IllegalArgumentException Thrown if parameter is null or blank.
+     */
     public void setLastName(String lastName) throws IllegalArgumentException{
         if (lastName == null || lastName.isBlank()){
             throw new IllegalArgumentException("Lastname cannot be empty.");
@@ -50,16 +64,24 @@ public abstract class Person {
     }
 
     /**
-     * @return Persons full name as string.
+     * @return Persons full name.
      */
     public String getFullName(){
         return getFirstName() + " " + getLastName();
     }
 
+    /**
+     * @return Persons Social Security Number.
+     */
     public String getSocialSecurityNumber() {
         return socialSecurityNumber;
     }
 
+    /**
+     * Sets persons social security number to a given string
+     * @param socialSecurityNumber Social Security Number to be set. Cannot be blank or null.
+     * @throws IllegalArgumentException Thrown if parameter is blank or null.
+     */
     public void setSocialSecurityNumber(String socialSecurityNumber) throws IllegalArgumentException{
         if (socialSecurityNumber == null || socialSecurityNumber.isBlank()){
             throw new IllegalArgumentException("Social security number cannot be empty.");

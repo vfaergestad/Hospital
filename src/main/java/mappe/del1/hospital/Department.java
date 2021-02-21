@@ -14,7 +14,7 @@ public class Department {
     private HashMap<String, Patient> patients;
 
     /**
-     * Constructor for class mappe.del1.hospital.Department.
+     * Constructor for class Department.
      * @param departmentName Name of the department.
      */
     public Department(String departmentName){
@@ -36,6 +36,9 @@ public class Department {
         }
     }
 
+    /**
+     * @return Name of the department.
+     */
     public String getDepartmentName(){
         return departmentName;
     }
@@ -57,6 +60,9 @@ public class Department {
         }
     }
 
+    /**
+     * @return List of patients at the department.
+     */
     public HashMap<String, Patient> getPatients(){
         return patients;
     }

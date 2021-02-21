@@ -12,7 +12,7 @@ public class Hospital {
     private HashMap<String, Department> departments;
 
     /**
-     * Constructor for class mappe.del1.hospital.Hospital.
+     * Constructor for class Hospital.
      * @param hospitalName Name of the hospital.
      * @throws IllegalArgumentException Thrown if hospital name is null or blank.
      */
@@ -25,6 +25,9 @@ public class Hospital {
         departments = new HashMap<>();
     }
 
+    /**
+     * @return Name of hospital.
+     */
     public String getHospitalName() {
         return hospitalName;
     }
@@ -35,8 +38,8 @@ public class Hospital {
 
     /**
      * Adds one department to the hospital.
-     * @param department Deparment to be added.
-     * @throws IllegalArgumentException Thrown if department is null.
+     * @param department Department to be added.
+     * @throws IllegalArgumentException Thrown if given department is null.
      */
     public void addDepartment(Department department) throws IllegalArgumentException{
         if (department == null) {

@@ -2,6 +2,7 @@ package mappe.del1.hospital;
 
 /**
  * Interface with methods for diagnosable persons.
+ * @author Vegard Færgestad
  */
 public interface Diagnosable {
 
