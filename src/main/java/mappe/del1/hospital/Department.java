@@ -43,6 +43,9 @@ public class Department {
         return departmentName;
     }
 
+    /**
+     * @return List of employees at the department.
+     */
     public HashMap<String, Employee> getEmployees(){
         return employees;
     }
