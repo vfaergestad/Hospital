@@ -1,7 +1,4 @@
 package mappe.del1.hospital;
-
-import mappe.del1.hospital.Person;
-
 /**
  * Represents one employee at the hospital.
  * @author Vegard Færgestad
