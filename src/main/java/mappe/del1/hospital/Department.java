@@ -1,8 +1,5 @@
 package mappe.del1.hospital;
-
-import Personnel.*;
 import mappe.del1.hospital.exception.RemoveException;
-
 import java.util.HashMap;
 import java.util.Objects;
 
