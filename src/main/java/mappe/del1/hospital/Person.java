@@ -45,7 +45,7 @@ public abstract class Person {
         if (lastName == null || lastName.isBlank()){
             throw new IllegalArgumentException("Lastname cannot be empty.");
         } else {
-            this.firstName = lastName;
+            this.lastName = lastName;
         }
     }
 
@@ -64,7 +64,7 @@ public abstract class Person {
         if (socialSecurityNumber == null || socialSecurityNumber.isBlank()){
             throw new IllegalArgumentException("Social security number cannot be empty.");
         } else {
-            this.firstName = socialSecurityNumber;
+            this.socialSecurityNumber = socialSecurityNumber;
         }
     }
 
