@@ -83,6 +83,12 @@ public class Department {
         }
     }
 
+     /**
+     * Checks if an object is equal to the department. They are considered equal
+     * if their department name is the same.
+     * @param o Object to check for equality.
+     * @return True of object are equal. False if not.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
