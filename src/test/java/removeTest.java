@@ -25,24 +25,24 @@ public class removeTest {
 
     @Test
     void removeExistingEmployee(){
-        assertTrue(department.getEmployees().containsKey(surgeon.getFullName()));
+        assertTrue(department.getEmployees().containsKey(surgeon.getFullNavn()));
         try {
             department.remove(surgeon);
         } catch (RemoveException e){
             System.err.println("Error occurred in removeTest.");
         }
-        assertFalse(department.getEmployees().containsKey(surgeon.getFullName()));
+        assertFalse(department.getEmployees().containsKey(surgeon.getFullNavn()));
     }
 
     @Test
     void removeExistingPatient(){
-        assertTrue(department.getPatients().containsKey(patient.getFullName()));
+        assertTrue(department.getPatients().containsKey(patient.getFullNavn()));
         try {
             department.remove(patient);
         } catch (RemoveException e){
             System.err.println("Error occurred in removeTest.");
         }
-        assertFalse(department.getPatients().containsKey(patient.getFullName()));
+        assertFalse(department.getPatients().containsKey(patient.getFullNavn()));
     }
 
     @Test

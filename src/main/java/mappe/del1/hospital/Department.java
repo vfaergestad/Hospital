@@ -59,7 +59,7 @@ public class Department {
         if (employee == null){
             throw new IllegalArgumentException("Employee cannot be null");
         } else {
-            employees.put(employee.getFullName(), employee);
+            employees.put(employee.getFullNavn(), employee);
         }
     }
 
@@ -79,7 +79,7 @@ public class Department {
         if (employees == null) {
             throw new IllegalArgumentException("Patient cannot be null");
         } else {
-            patients.put(patient.getFullName(), patient);
+            patients.put(patient.getFullNavn(), patient);
         }
     }
 
@@ -116,15 +116,15 @@ public class Department {
      */
     public void remove(Person person) throws RemoveException {
         if (person instanceof Employee) {
-            if (employees.remove(person.getFullName()) == null) {
-                throw new RemoveException(person.getFullName() + " is not in the department.");
+            if (employees.remove(person.getFullNavn()) == null) {
+                throw new RemoveException(person.getFullNavn() + " is not in the department.");
             }
         } else if (person instanceof Patient) {
-           if (patients.remove(person.getFullName()) == null){
-               throw new RemoveException(person.getFullName() + " is not in the department.");
+           if (patients.remove(person.getFullNavn()) == null){
+               throw new RemoveException(person.getFullNavn() + " is not in the department.");
             }
         } else {
-            throw new RemoveException(person.getFullName() + " is not a patient or an employee.");
+            throw new RemoveException(person.getFullNavn() + " is not a patient or an employee.");
         }
     }
 }

@@ -20,7 +20,7 @@ public abstract class Person {
     public Person(String firstName, String lastName, String socialSecurityNumber){
         setFirstName(firstName);
         setLastName(lastName);
-        setSocialSecurityNumber(socialSecurityNumber);
+        setPersonnummer(socialSecurityNumber);
     }
 
     /**
@@ -66,14 +66,14 @@ public abstract class Person {
     /**
      * @return Persons full name.
      */
-    public String getFullName(){
+    public String getFullNavn(){
         return getFirstName() + " " + getLastName();
     }
 
     /**
      * @return Persons Social Security Number.
      */
-    public String getSocialSecurityNumber() {
+    public String getPersonnummer() {
         return socialSecurityNumber;
     }
 
@@ -82,7 +82,7 @@ public abstract class Person {
      * @param socialSecurityNumber Social Security Number to be set. Cannot be blank or null.
      * @throws IllegalArgumentException Thrown if parameter is blank or null.
      */
-    public void setSocialSecurityNumber(String socialSecurityNumber) throws IllegalArgumentException{
+    public void setPersonnummer(String socialSecurityNumber) throws IllegalArgumentException{
         if (socialSecurityNumber == null || socialSecurityNumber.isBlank()){
             throw new IllegalArgumentException("Social security number cannot be empty.");
         } else {

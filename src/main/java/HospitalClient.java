@@ -18,7 +18,7 @@ public class HospitalClient {
         emergency.addEmployee(employee);
         try {
             emergency.remove(employee);
-            System.out.println(employee.getFullName() + " was added to " + emergency.getDepartmentName());
+            System.out.println(employee.getFullNavn() + " was added to " + emergency.getDepartmentName());
         } catch (RemoveException e){
             System.out.println(e.getMessage());
         }
