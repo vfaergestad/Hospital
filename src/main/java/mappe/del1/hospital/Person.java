@@ -92,7 +92,7 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return "Personnel.Person{" +
+        return "Person{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", socialSecurityNumber='" + socialSecurityNumber + '\'' +
