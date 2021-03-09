@@ -36,4 +36,14 @@ public class Patient extends Person implements Diagnosable {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "firstName='" + this.getFirstName() + '\'' +
+                ", lastName='" + this.getLastName() + '\'' +
+                ", socialSecurityNumber='" + this.getPersonnummer() + '\'' +
+                ", diagnosis='" + this.getDiagnosis() + '\'' +
+                '}';
+    }
+
 }
