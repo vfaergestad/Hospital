@@ -46,11 +46,6 @@ public class RemoveTest {
     }
 
     @Test
-    void removeWrongInstance(){
-        assertThrows(RemoveException.class, () -> department.remove(nurse));
-    }
-
-    @Test
     void removeNotExistingEmployee(){
         GeneralPractitioner generalPractitioner = new GeneralPractitioner("Vegard",
                 "Færgestad", "123456789");
