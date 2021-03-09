@@ -7,7 +7,7 @@ import mappe.del1.hospital.healthpersonnel.doctor.Surgeon;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class removeTest {
+public class RemoveTest {
     static Department department;
     static Surgeon surgeon;
     static Patient patient;
