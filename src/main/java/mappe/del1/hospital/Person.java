@@ -18,7 +18,7 @@ public abstract class Person {
      * @throws IllegalArgumentException Throws when parameter requirements are not met.
      */
     public Person(String firstName, String lastName, String socialSecurityNumber){
-        setFirstName(firstName);
+        setFirtName(firstName);
         setLastName(lastName);
         setPersonnummer(socialSecurityNumber);
     }
@@ -35,7 +35,7 @@ public abstract class Person {
      * @param firstName First name to be set. String type.
      * @throws IllegalArgumentException Thrown if parameter is null or blank.
      */
-    public void setFirstName(String firstName) throws IllegalArgumentException{
+    public void setFirtName(String firstName) throws IllegalArgumentException{ // Method name is wrong to follow the class diagram.
         if (firstName == null || firstName.isBlank()){
             throw new IllegalArgumentException("Firstname cannot be empty.");
         } else {
@@ -66,14 +66,14 @@ public abstract class Person {
     /**
      * @return Persons full name.
      */
-    public String getFullNavn(){
+    public String getFullNavn(){ //Method name is wrong to follow the class diagram.
         return getFirstName() + " " + getLastName();
     }
 
     /**
      * @return Persons Social Security Number.
      */
-    public String getPersonnummer() {
+    public String getPersonnummer() { //Method name is wrong to follow the class diagram.
         return socialSecurityNumber;
     }
 
@@ -82,7 +82,7 @@ public abstract class Person {
      * @param socialSecurityNumber Social Security Number to be set. Cannot be blank or null.
      * @throws IllegalArgumentException Thrown if parameter is blank or null.
      */
-    public void setPersonnummer(String socialSecurityNumber) throws IllegalArgumentException{
+    public void setPersonnummer(String socialSecurityNumber) throws IllegalArgumentException{ //Method name is wrong to follow the class diagram.
         if (socialSecurityNumber == null || socialSecurityNumber.isBlank()){
             throw new IllegalArgumentException("Social security number cannot be empty.");
         } else {
