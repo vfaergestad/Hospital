@@ -1,7 +1,5 @@
-import mappe.del1.hospital.Department;
-import mappe.del1.hospital.Employee;
-import mappe.del1.hospital.Hospital;
-import mappe.del1.hospital.Patient;
+package mappe.del1.hospital;
+
 import mappe.del1.hospital.exception.RemoveException;
 
 /**
